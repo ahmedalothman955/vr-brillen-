@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    
+}
+
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ 
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+span{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+.aside {
+  
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+img{
+     width: 400px;
+     height: 400px;
+}
+.one{
+    width: 600px;
+     height: 400px;
+   padding-left: 20px;
+}
+.two{
+     width: 300px;
+     height: 400px;
+     margin-left: 150px;
+     
+}
+#three{
+     width: 300px;
+     height: 300px;
+       
+}
+/* For button: */
+button {
+  border-radius: 4px;
+  background-color: #ee2c25;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 16px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* For video: */
+iframe{
+    width:1100px;
+    height:400px;
+}
+.footer {
+ 
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+/* For navbar: */
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+</style>
+</head>
+<body>
+<!------ header ---->
+
+<header class="header">
+    <h1 class="logo"><a href="#"><span>Vr.</span>brillen</a></h1>
+  <ul class="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">shop</a></li>
+      <li><a href="#">Contact</a></li>
+     <li><a href=""><i class="fa fa-search"></a></i></li> 
+     <li><a href=""><i class="fa fa-user"></a></i></li> 
+     <li><a href=""><i class="fa fa-shopping-basket"></a></i></li> 
+  </ul>
+</header> 
+<!------ end header ---->
+<!------ row ---->
+<div class="row">
+  <div class="col-8">
+    <h1>The City</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+  </div>
+
+  <div class="col-4 right">
+       <img src="img/vr.jpg" alt="">
+  </div>
+</div>
+<!------ end row ---->
+<!------ main ---->
+<div class="main">
+    <div class="col-4">
+        <img src="img/VR-SHINECON.jpg" alt="">
+      <h1>VR-SHINECON</h1>
+      <p>36.99</p>
+    </div>
+    <div class="col-4">
+        <img src="img/DESTEK V5 VR Headset.jpg" alt="">
+      <h1>DESTEK V5 VR Headset</h1>
+      <p>36.95</p>
+    </div>
+    <div class="col-4">
+        <img src="img/VR-Headset-Compatible.jpg" alt="">
+      <h1>VR Headset Compatible</h1>
+      <p>30.99</p>
+    </div>
+  </div>
+  <!------ end main  ---->
+
+  <div class="product">
+    <div class="col-4">
+        <img class="one" src="img/n1.jpg" alt="">
+      <h1>The City</h1>
+      <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    </div>
+    <div class="col-4">
+        <img  class="two" src="img/vr1.jpg" alt="">
+      <h1>The City</h1>
+      <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    </div>
+    <div class="col-4">
+        <img class="three"src="img/vr1.jpg" alt="">
+      <h1>The City</h1>
+      <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    </div>
+  </div>
+  <!------  Populartext Items  ---->
+  <div class="Populartext">
+    <div class="col-12">
+        <h1>Popular Items</h1>
+      <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+        
+  </div>
+  <!-- end Populartext-->
+  <!------  Popular Items  ---->
+  <div class="Popular">
+    <div class="col-4">
+        <img id="three"src="img/vr1.jpg" alt="">
+        <h1>The City</h1>
+        <p>100</p>
+        
+  </div>
+  <div class="col-4">    
+    <img id="three"src="img/vr1.jpg" alt="">
+      <h1>The City</h1>
+      <p>100</p>
+  </div>
+  <div class="col-4">    
+    <img id="three"src="img/vr1.jpg" alt="">
+      <h1>The City</h1>
+      <p>100</p>
+  </div>
+
+  <!-- end Popular-->
+  <!------  Popular Items  ---->
+  <div class="Popular2">
+    <div class="col-4">
+        <img id="three"src="img/vr1.jpg" alt="">
+        <h1>The City</h1>
+        <p>100</p>
+        
+  </div>
+  <div class="col-4">    
+    <img id="three"src="img/vr1.jpg" alt="">
+      <h1>The City</h1>
+      <p>100</p>
+  </div>
+  <div class="col-4">    
+    <img id="three"src="img/vr1.jpg" alt="">
+      <h1>The City</h1>
+      <p>100</p>
+  </div>
+
+  <!-- end Popular-->
+    <!------  Populartext Items  ---->
+    <div class="Populartext">
+        <div class="col-12">
+          <button><span>view more products</span> </button>  
+      </div>
+      <!-- end Populartext-->
+      <!-- video-->
+      <div class="video">
+         <div class="col-12">
+         <iframe  src="https://www.youtube.com/embed/s5vAMhJsPfc"></iframe>
+      </div>
+      <!-- end video -->
+       <!--  keuze -->
+      <div class="keuze">
+        <div class="col-6">
+          <h1>Kijk naar de keuze</h1>
+          <p>Chania is the capital of the Chania region on the island of Crete.
+               The city can be divided in two parts, the old town and the modern city.
+            </p>
+            <button>kijk vrbrillen </button>
+        </div>
+      
+        <div class="col-6 right">
+             <img src="img/vr.jpg" alt="">
+        </div>
+      </div>
+
+  
+<!--  end keuze -->
+<!--  deel 2keuze -->
+  
+  
+
+
+
+<!--  end deel keuze -->
+
+<!--- Free Shipping Method-->
+<div class="Quick">
+    <div class="col-4">
+      <h1>vr.brillen </h1>
+      <p>Chania is the capital of the Chania region on the island of Crete.</p>
+    </div>
+    <div class="col-4">
+        <h1>New Products</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete.</p>
+      </div>
+      <div class="col-4">
+        <h1>Quick Links</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete.</p>
+      </div>
+   
+     
+  </div>
+<!--- end Free Shipping Method-->
+
+<!--- New Products-->
+<div class="Quick">
+    <div class="col-3">
+      <h1>vr.brillen </h1>
+      <p>Chania is the capital of the Chania region on the island of Crete.</p>
+    </div>
+    <div class="col-3">
+        <h1>New Products</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete.</p>
+      </div>
+      <div class="col-3">
+        <h1>Quick Links</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete.</p>
+      </div>
+   
+      <div class="col-3">
+        <h1>Support</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete.</p>
+      </div>
+  </div>
+<!--- end New Products-->
+<!------ footer ---->
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
