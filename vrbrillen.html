@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="./img/Foto's/001-virtual-reality.png" type="image/x-icon">
 <style>
 * {
   box-sizing: border-box;
@@ -10,10 +11,13 @@
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'roboto';
 	line-height: 1.6;
 	margin: 0;
 	min-height: 100vh;
+  background-color: #1dd1a1; /* #222f3e , 1dd1a1 */    /* Dit zijn de kleuren die we moeten gebriken */
+  color: #000;
+
 }
 .row::after {
   content: "";
@@ -30,13 +34,14 @@ body {
 	padding-top: .5em;
 	padding-bottom: .5em;
 	border: 1px solid #a2a2a2;
-	background-color: #f4f4f4;
+	background-color: #222f3e;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+  
     
 }
 
@@ -53,7 +58,8 @@ ul {
 h2,
 h3,
 a {
-	color: #34495e;
+	color: #ffffff;
+  
 }
 
 a {
@@ -65,6 +71,12 @@ a {
 .logo {
 	margin: 0;
 	font-size: 1.45em;
+}
+
+.logoImg { 
+  width: 50px;
+  height: 50px;
+  float: left;
 }
 
 .main-nav {
@@ -80,7 +92,7 @@ a {
 }
 
 .main-nav a {
-	color: #34495e;
+	color: #ffffff;
 	font-size: .99em;
 }
 
@@ -91,7 +103,7 @@ a {
 
 
 span{
-    color: red;
+    color: FFFFFF;
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
 }
@@ -108,25 +120,25 @@ img{
      height: 400px;
 }
 .one{
-    width: 600px;
+    width: 400px;
      height: 400px;
-   padding-left: 20px;
+   
 }
 .two{
-     width: 300px;
+     width: 400px;
      height: 400px;
-     margin-left: 150px;
+     
      
 }
 #three{
-     width: 300px;
-     height: 300px;
+     width: 400px;
+     height: 400px;
        
 }
 /* For button: */
 button {
   border-radius: 4px;
-  background-color: #ee2c25;
+  background-color: #222f3e;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -214,7 +226,35 @@ iframe{
 		flex-direction: row;
 		justify-content: space-between;
 	}
+.img1 {                                   /* Dit is voor de eerste foto in de overzicht */ 
+  border: 1px;
+  border-radius: 20px;
+  border-color: #222f3e;
+  border-style: solid;
+  height: 700px; 
+  margin-top: 50px;
+  width: 500px;
+}
 
+img {
+  border: 1px;
+  border-radius: 20px;
+  border-color: #222f3e;
+  border-style: solid;
+
+}
+#spanHead { 
+  color: red;
+}
+}
+
+h1{
+  font-family: "Oswald";
+}
+
+.imgOverzicht {
+  width: 800px;
+  height: 500px;
 }
 
 </style>
@@ -223,7 +263,8 @@ iframe{
 <!------ header ---->
 
 <header class="header">
-    <h1 class="logo"><a href="#"><span>Vr.</span>brillen</a></h1>
+    <h1 class="logo"><a href="#"><span id="spanHead">Vr.</span>brillen</a></h1>
+    <img class="logoImg" src="./img/Foto's/001-virtual-reality.png" alt="logo">
   <ul class="main-nav">
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
@@ -238,12 +279,16 @@ iframe{
 <!------ row ---->
 <div class="row">
   <div class="col-8">
-    <h1>The City</h1>
+    <h1>Multiversum</h1>
     <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <img class="imgOverzicht" src="./img/Foto's/lux-interaction-xL3xDwWx7_s-unsplash.jpg" alt="">
   </div>
 
   <div class="col-4 right">
-       <img src="img/vr.jpg" alt="">
+       <img class="img1" src="./img/Foto's/xianjuan-hu-uPYpcsbICI4-unsplash.jpg" alt="">
   </div>
 </div>
 <!------ end row ---->
@@ -269,7 +314,7 @@ iframe{
 
   <div class="product">
     <div class="col-4">
-        <img class="one" src="img/n1.jpg" alt="">
+        <img class="one" src="img/n1.jpg" alt="" >
       <h1>The City</h1>
       <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
     </div>
@@ -335,7 +380,7 @@ iframe{
     <!------  Populartext Items  ---->
     <div class="Populartext">
         <div class="col-12">
-          <button><span>view more products</span> </button>  
+          <button><span><a target="_black" href="****">view more products</a></span> </button>  
       </div>
       <!-- end Populartext-->
       <!-- video-->
